@@ -1,0 +1,12 @@
+[Unit]
+Description=S3 DR Service
+After=network.target
+
+[Service]
+ExecStart=/bin/bash -c "exec java -jar -Dlogback.configurationFile=/usr/local/pspace/etc/ifss-s3dr.xml /usr/local/pspace/bin/ifss-s3dr"
+
+User=root
+Group=root
+
+[Install]
+WantedBy=multi-user.target

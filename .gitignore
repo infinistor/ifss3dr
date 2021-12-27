@@ -1,0 +1,11 @@
+#folder
+target/
+.vscode/
+.settings/
+
+#files
+*.ps1
+.project
+.classpath
+resource/start.sh
+resource/ifss-s3dr.conf
